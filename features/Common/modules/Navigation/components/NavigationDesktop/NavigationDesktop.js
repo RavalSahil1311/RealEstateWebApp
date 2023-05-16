@@ -21,10 +21,19 @@ const NavigationDesktop = () => {
               </Text>
             </Box>
           </Link>
-          {navigationLinks.map((item) => (
-            <NavigationLink key={item.title} {...item} />
-          ))}
-          <Button>CREATE LISTING</Button>
+          <Flex gap='12' alignItems='center' fontWeight='medium'>
+            {navigationLinks.map((item) => (
+              <NavigationLink key={item.title} {...item} />
+            ))}
+            <Button
+              padding="1.5rem"
+              colorScheme="twitter"
+              fontSize="0.8rem"
+              fontWeight="medium"
+            >
+              CREATE LISTING
+            </Button>
+          </Flex>
         </Flex>
       </Box>
     </Box>
@@ -36,7 +45,7 @@ export default NavigationDesktop;
 const NavigationLink = ({ title, link, icon }) => {
   return (
     <Link href={link}>
-      <Flex alignItems="cente" gap="0.5rem">
+      <Flex alignItems="center" gap="0.5rem">
         {icon}
         {title}
       </Flex>
