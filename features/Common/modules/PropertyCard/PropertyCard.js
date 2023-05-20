@@ -36,7 +36,7 @@ const PropertyCard = (property) => {
             height="50%"
             display="flex"
             alignItems="flex-end"
-            padding='1rem'
+            padding="1rem"
             bgGradient="linear(to-t,#0a0b1cd9,#ffffff00 100%)"
           >
             <Text
@@ -70,7 +70,10 @@ const PropertyCard = (property) => {
             <Flex alignItems="center" gap="0.3rem">
               <TbRuler />
               {sqSize}
-              <sup>m2</sup>
+              <Text>
+                m
+                <sup>2</sup>
+              </Text>
             </Flex>
           </HStack>
         </Box>
